@@ -1,0 +1,18 @@
+---
+  sources:
+    r10k_config:
+      remote: git@github.umn.edu:MSI-Puppet/r10k_config.git
+      basedir: '/etc/puppetlabs/r10k/gitsync'
+     
+    node_environments:
+      remote: git@github.umn.edu:MSI-Puppet/node-environments.git
+      basedir: '/etc/puppetlabs/code/node-environments'
+
+    persistent_systems:
+      remote: git@github.umn.edu:MSI-Puppet/persistent_systems_control.git
+      basedir: '/etc/puppetlabs/code/environments'
+      prefix: true
+
+    persistent_systems_node_data:
+      remote: git@github.umn.edu:MSI-Puppet/persistent_systems_node_hieradata.git
+      basedir: '/etc/puppetlabs/code/node-hieradata'
