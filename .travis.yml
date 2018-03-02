@@ -1,0 +1,16 @@
+language: ruby
+cache: bundler
+before_install:
+ - bundle -v
+script:
+  - 'bundle exec r10k puppetfile check r10k.yaml'
+rvm:
+  - 2.4
+notifications:
+  email: true
+  irc:
+    channels:
+      - "irc.msi.umn.edu#puppet"
+    on_success: change
+    on_failure: always
+    skip_join: true
