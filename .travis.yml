@@ -1,9 +1,14 @@
+sudo: required
 language: ruby
 cache: bundler
 before_install:
  - bundle -v
+install:
+ - sudo mkdir /etc/puppetlabs
+ - sudo chmod a+rwx /etc/puppetlabs
+ - bundle install
 script:
-  - 'bundle exec r10k puppetfile check r10k.yaml'
+  - 'bundle exec r10k deploy environment'
 rvm:
   - 2.4
 notifications:
