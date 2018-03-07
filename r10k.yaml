@@ -17,6 +17,6 @@
       remote: git@github.umn.edu:MSI-Puppet/persistent_systems_node_hieradata.git
       basedir: '/etc/puppetlabs/code/node-hieradata'
 
-    firewall_data:
+    shared_hieradata:
       remote: git@github.umn.edu:MSI-Puppet/firewall_hieradata.git
-      basedir: '/etc/puppetlabs/code/firewall-hieradata'
+      basedir: '/etc/puppetlabs/code/shared-hieradata'
