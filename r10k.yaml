@@ -20,3 +20,7 @@
     shared_hieradata:
       remote: git@github.umn.edu:MSI-Puppet/shared_hieradata.git
       basedir: '/etc/puppetlabs/code/shared-hieradata'
+
+    persistent_systems_trivial_modules:
+      remote: git@github.umn.edu:MSI-Puppet/psi_trivial_modules.git
+      basedir: '/etc/puppetlabs/code/psi_trivial_modules'
