@@ -1,0 +1,16 @@
+r10k_yaml: /etc/puppetlabs/r10k/r10k.yaml
+environment_path: /etc/puppetlabs/code/environments
+
+links:
+  persistent_systems:
+    - link_name: shared_hieradata
+      r10k_source: shared_hieradata
+      map:
+        persistent_systems_production: production
+      fallback_branch: develop
+
+    - link_name: psi_trivial_modules
+      r10k_source: persistent_systems_trivial_modules
+      map:
+        persistent_systems_production: production
+      fallback_branch: develop
