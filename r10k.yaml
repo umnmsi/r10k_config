@@ -3,7 +3,12 @@
     r10k_config:
       remote: git@github.umn.edu:MSI-Puppet/r10k_config.git
       basedir: '/etc/puppetlabs/r10k/gitsync'
-     
+
+    nodes:
+      remote: git@github.umn.edu:MSI-Puppet/nodes.git
+      basedir: '/etc/puppetlabs/code/nodes'
+
+    # Deprecated in favor of single hiera+enc nodes repo
     node_environments:
       remote: git@github.umn.edu:MSI-Puppet/node-environments.git
       basedir: '/etc/puppetlabs/code/node-environments'
