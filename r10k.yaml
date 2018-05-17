@@ -24,3 +24,12 @@
     persistent_systems_trivial_modules:
       remote: git@github.umn.edu:MSI-Puppet/psi_trivial_modules.git
       basedir: '/etc/puppetlabs/code/psi_trivial_modules'
+
+    hpc:
+      remote: git@github.umn.edu:MSI-Puppet/hpc_control.git
+      basedir: '/etc/puppetlabs/code/environments'
+      prefix: true
+
+    hpc_trivial_modules:
+      remote: git@github.umn.edu:MSI-Puppet/hpc_trivial_modules.git
+      basedir: '/etc/puppetlabs/code/hpc_trivial_modules'

@@ -14,3 +14,15 @@ links:
       map:
         persistent_systems_production: production
       fallback_branch: develop
+  hpc:
+    - link_name: shared_hieradata
+      r10k_source: shared_hieradata
+      map:
+        hpc_production: production
+      fallback_branch: develop
+
+    - link_name: hpc_trivial_modules
+      r10k_source: hpc_trivial_modules
+      map:
+        hpc_production: production
+      fallback_branch: develop
