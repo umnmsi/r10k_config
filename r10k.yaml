@@ -33,3 +33,18 @@
     hpc_trivial_modules:
       remote: git@github.umn.edu:MSI-Puppet/hpc_trivial_modules.git
       basedir: '/etc/puppetlabs/code/hpc_trivial_modules'
+
+    stratus:
+      remote: git@github.umn.edu:MSI-Puppet/stratus_control.git
+      basedir: '/etc/puppetlabs/code/environments'
+      prefix: true
+
+    stratusdev:
+      remote: git@github.umn.edu:MSI-Puppet/stratusdev_control.git
+      basedir: '/etc/puppetlabs/code/environments'
+      prefix: true
+
+    nokomisdev:
+      remote: git@github.umn.edu:MSI-Puppet/nokomisdev_control.git
+      basedir: '/etc/puppetlabs/code/environments'
+      prefix: true
