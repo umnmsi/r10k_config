@@ -26,3 +26,11 @@ links:
       map:
         hpc_production: production
       fallback_branch: develop
+  openstack:
+    - link_name: shared_hieradata
+      r10k_source: shared_hieradata
+      map:
+        openstack_stratus_production: production
+        openstack_crescent_production: production
+      fallback_branch: develop
+
