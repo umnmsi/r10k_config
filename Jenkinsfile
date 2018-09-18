@@ -30,7 +30,6 @@ sudo -E PATH=\$PATH /bin/unshare -m /usr/local/bin/validate_r10k.sh"""
     sh """#!/bin/bash -l
 rvm use ${rvm}@${env.BUILD_TAG}
 rvm --force gemset delete ${env.BUILD_TAG}"""
-    deleteDir()
   }
 }
 // vim: syn=groovy ts=2 sw=2 expandtab
