@@ -34,3 +34,10 @@ links:
         openstack_crescent_production: production
       fallback_branch: develop
 
+    - link_name: openstack_trivial_modules
+      r10k_source: openstack_trivial_modules
+      map:
+        openstack_stratus_production: production
+        openstack_crescent_production: production
+      fallback_branch: develop
+
