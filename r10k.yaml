@@ -38,3 +38,7 @@
       remote: git@github.umn.edu:MSI-Puppet/openstack_control.git
       basedir: '/etc/puppetlabs/code/environments'
       prefix: true
+
+    openstack_trivial_modules:
+      remote: git@github.umn.edu:MSI-Puppet/openstack_trivial_modules.git
+      basedir: '/etc/puppetlabs/code/openstack_trivial_modules'
