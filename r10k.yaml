@@ -13,10 +13,6 @@
       basedir: '/etc/puppetlabs/code/environments'
       prefix: true
 
-    persistent_systems_node_data:
-      remote: git@github.umn.edu:MSI-Puppet/persistent_systems_node_hieradata.git
-      basedir: '/etc/puppetlabs/code/node-hieradata'
-
     shared_hieradata:
       remote: git@github.umn.edu:MSI-Puppet/shared_hieradata.git
       basedir: '/etc/puppetlabs/code/shared-hieradata'
