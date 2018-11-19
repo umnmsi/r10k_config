@@ -1,4 +1,6 @@
 ---
+  deploy:
+    generate_types: true
   sources:
     r10k_config:
       remote: git@github.umn.edu:MSI-Puppet/r10k_config.git
