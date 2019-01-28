@@ -40,3 +40,12 @@
     openstack_trivial_modules:
       remote: git@github.umn.edu:MSI-Puppet/openstack_trivial_modules.git
       basedir: '/etc/puppetlabs/code/openstack_trivial_modules'
+
+    net:
+      remote: git@github.umn.edu:MSI-Puppet/net_control.git
+      basedir: '/etc/puppetlabs/code/environments'
+      prefix: true
+
+    net_trivial_modules:
+      remote: git@github.umn.edu:MSI-Puppet/net_trivial_modules.git
+      basedir: '/etc/puppetlabs/code/net_trivial_modules'

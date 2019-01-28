@@ -40,4 +40,15 @@ links:
         openstack_stratus_production: production
         openstack_crescent_production: production
       fallback_branch: develop
+  net:
+    - link_name: shared_hieradata
+      r10k_source: shared_hieradata
+      map:
+        net_production: production
+      fallback_branch: develop
 
+    - link_name: net_trivial_modules
+      r10k_source: net_trivial_modules
+      map:
+        net_production: production
+      fallback_branch: develop
